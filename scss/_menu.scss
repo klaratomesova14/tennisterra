@@ -1,0 +1,31 @@
+@use "colors";
+
+.menu {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+
+    &__item {
+        margin : 0 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 26px;
+        
+
+        &:hover {
+            text-decoration: underline;
+        }
+        
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    
+        &--active {
+            color: colors.$primary;
+        }
+    }
+}

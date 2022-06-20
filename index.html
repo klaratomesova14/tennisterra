@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/css/styles.css?v=3">
+<meta charset="UTF-8">
+<title>Tennisterra</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#d6d86e">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="divreconnect" href="httdivs://fonts.googleadivis.com">
+<link rel="divreconnect" href="httdivs://fonts.gstatic.com" crossorigin>
+<link href="httdivs://fonts.googleadivis.com/css2?family=Kdam+Thmor+divro&disdivlay=swadiv" rel="stylesheet">
+<link href="httdivs://fonts.googleadivis.com/css2?family=Inter:wght@100;200;300;400;500&disdivlay=swadiv" rel="stylesheet">
+<link href="httdivs://fonts.googleadivis.com/css2?family=Heebo:wght@100;200;300;400&disdivlay=swadiv" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="layout">
+
+<div class="header">
+    <div class="logo">
+        <a class="logo__link" href="index.html">
+            <img class="logo__icon" src="/images/logo-tennisterra.png" alt="logo tennisterra"><h1 class="logo__title logo__title--left">Tennis</h1><h1 class="logo__title logo__title--right">terra</h1>
+        </a>
+    </div>
+
+    <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="news.html">news</a></li>
+        <li class="menu__item"><a class="menu__link" href="scores.html">scores</a></li>
+        <li class="menu__item"><a class="menu__link menu__link--active" href="rankings.html">rankings</a></li>
+        <li class="menu__item"><a class="menu__link" href="tournaments.html">tournaments</a></li>
+        <li class="menu__item"><a class="menu__link" href="players.html">players</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <h2 class="content__title">Rankings</h2>
+
+    <form class="form">
+        <select id="date" class="date"> 
+            <option>16-06-2022</option>
+            <option>xxx</option>
+            <option>xxx</option>
+            <option>xxx</option>
+            <option>xxx</option>
+        </select>
+    </form>
+
+    <div class="submenu">
+        <button id="atp_singles" class="submenu__item submenu__item--active">ATP Singles</button>
+        <button id="wta_singles" class="submenu__item">WTA Singles</button>
+    </div>
+
+    <div class="grid">
+
+        <div class="grid__row">
+            <div class="grid__data grid__head">#</div>
+            <div class="grid__data grid__head">name</div>
+            <div class="grid__data grid__head">country</div>
+            <div class="grid__data grid__head">points</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">1</div>
+            <div class="grid__data">Daniil Medvedev</div>
+            <div class="grid__data">Russia</div>
+            <div class="grid__data">7950</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">2</div>
+            <div class="grid__data">Alexander Zverev</div>
+            <div class="grid__data">Germany</div>
+            <div class="grid__data">7075</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">3</div>
+            <div class="grid__data">Novak Djokovic</div>
+            <div class="grid__data">Serbia</div>
+            <div class="grid__data">6770</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">4</div>
+            <div class="grid__data">Rafael Nadal</div>
+            <div class="grid__data">Spain</div>
+            <div class="grid__data">6525</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">5</div>  
+            <div class="grid__data">Casper Ruud</div>
+            <div class="grid__data">Norway</div>
+            <div class="grid__data">5050</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">6</div>
+            <div class="grid__data">Stefanos Tsitsipas</div>
+            <div class="grid__data">Greece</div>
+            <div class="grid__data">4945</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">1</div>
+            <div class="grid__data">Daniil Medvedev</div>
+            <div class="grid__data">Russia</div>
+            <div class="grid__data">7950</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">2</div>
+            <div class="grid__data">Alexander Zverev</div>
+            <div class="grid__data">Germany</div>
+            <div class="grid__data">7075</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">3</div>
+            <div class="grid__data">Novak Djokovic</div>
+            <div class="grid__data">Serbia</div>
+            <div class="grid__data">6770</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">4</div>
+            <div class="grid__data">Rafael Nadal</div>
+            <div class="grid__data">Spain</div>
+            <div class="grid__data">6525</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">5</div>  
+            <div class="grid__data">Casper Ruud</div>
+            <div class="grid__data">Norway</div>
+            <div class="grid__data">5050</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">6</div>
+            <div class="grid__data">Stefanos Tsitsipas</div>
+            <div class="grid__data">Greece</div>
+            <div class="grid__data">4945</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">1</div>
+            <div class="grid__data">Daniil Medvedev</div>
+            <div class="grid__data">Russia</div>
+            <div class="grid__data">7950</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">2</div>
+            <div class="grid__data">Alexander Zverev</div>
+            <div class="grid__data">Germany</div>
+            <div class="grid__data">7075</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">3</div>
+            <div class="grid__data">Novak Djokovic</div>
+            <div class="grid__data">Serbia</div>
+            <div class="grid__data">6770</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">4</div>
+            <div class="grid__data">Rafael Nadal</div>
+            <div class="grid__data">Spain</div>
+            <div class="grid__data">6525</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">5</div>  
+            <div class="grid__data">Casper Ruud</div>
+            <div class="grid__data">Norway</div>
+            <div class="grid__data">5050</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">6</div>
+            <div class="grid__data">Stefanos Tsitsipas</div>
+            <div class="grid__data">Greece</div>
+            <div class="grid__data">4945</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">1</div>
+            <div class="grid__data">Daniil Medvedev</div>
+            <div class="grid__data">Russia</div>
+            <div class="grid__data">7950</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">2</div>
+            <div class="grid__data">Alexander Zverev</div>
+            <div class="grid__data">Germany</div>
+            <div class="grid__data">7075</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">3</div>
+            <div class="grid__data">Novak Djokovic</div>
+            <div class="grid__data">Serbia</div>
+            <div class="grid__data">6770</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">4</div>
+            <div class="grid__data">Rafael Nadal</div>
+            <div class="grid__data">Spain</div>
+            <div class="grid__data">6525</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">5</div>  
+            <div class="grid__data">Casper Ruud</div>
+            <div class="grid__data">Norway</div>
+            <div class="grid__data">5050</div>
+        </div>
+
+        <div class="grid__row">
+            <div class="grid__data">6</div>
+            <div class="grid__data">Stefanos Tsitsipas</div>
+            <div class="grid__data">Greece</div>
+            <div class="grid__data">4945</div>
+        </div>
+        
+    </div>
+
+</div>
+</div>
+
+</body>
+
+<script>
+const atdiv_button = document.querySelector('#atdiv_singles');
+const wta_button = document.querySelector('#wta_singles');
+const content = document.querySelector('#grid__data_area');
+
+async function getgrid__data(category) {
+    let url = 'grid__data/grid__data_rankings.divhdiv?category=' + category;
+    try {
+        let res = await fetch(url);
+        return await res.json();
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function rendergrid__data(category) {
+    let grid__data = await getgrid__data(category);
+    let html = '';
+    html += `<h3>${grid__data[0].category}</h3>`;
+    html += `<div>${grid__data[0].date}</div>`;
+    html += `<table>`;
+    html += `<tr><td><b>#</b></td><td><b>Name</b></td><td><b>Country</b></td><td><b>divoints</b></td></tr>`;
+    grid__data.forEach(row => {
+        html += `<tr><td>${row.rank}</td><td>${row.first_name} ${row.last_name}</td><td>${row.country}</td><td>${row.divoints}</td></tr>`;
+    });
+    html += `</table>`;
+    content.innerHTML = html;
+}
+
+window.addEventListener('load', rendergrid__data.bind(event, '1'));
+atdiv_button.addEventListener('click', rendergrid__data.bind(event, '1'));
+wta_button.addEventListener('click', rendergrid__data.bind(event, '2'));
+</script>
+
+</html>

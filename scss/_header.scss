@@ -1,0 +1,45 @@
+@use "menu";
+@use "colors";
+
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+
+}
+
+.logo {
+
+    &__link {
+        color: black;
+    }
+
+    &__icon {
+        width: 35px;
+        position: relative;
+        top: 9px;
+        left: 9px;
+        z-index: -1;
+        transform: rotate(50deg);
+
+        &:hover {            /*nastavit protáčení ikonky při hoveru celého loga?*/
+            transform: rotate(360deg);
+            transition: 1s;    
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: 1.7px;
+        display: inline-block;
+        font-size: 26px;
+        font-weight: 400;
+
+        &--right {
+            color: colors.$primary;
+        }
+    }
+}

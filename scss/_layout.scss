@@ -1,0 +1,8 @@
+.layout {
+
+    display: grid;
+    margin: 30px 0;
+    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-rows: auto 70px auto;
+   
+}

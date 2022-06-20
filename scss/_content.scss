@@ -1,0 +1,84 @@
+@use "colors";
+
+.content {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.content__title {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+.form {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.date {
+    padding: 10px 0;
+    margin-left: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.submenu {
+    margin: 30px auto;
+    width: fit-content;
+    display: flex;
+    gap: 75px;
+
+    &__item {
+    background-color: #CCCCCC;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 25px 35px;
+    cursor: pointer;
+    font-size: 16px;
+  
+    &:hover  {
+        background-color: #9d9d9d;
+    }
+
+    &--active {
+        background-color: colors.$primary;
+    }
+}
+}
+
+.grid {
+    margin: 50px auto;
+    padding: 0 25px;
+    display: grid;
+    grid-auto-rows: auto;
+    background-color: white;
+}
+
+.grid__row {
+    display: grid;
+    align-items: end;
+    padding: 5px 50px;
+    border-radius: 5px;
+    grid-template-columns: 50px 1.5fr 1fr auto;
+}
+
+.grid__row:nth-child(even) {
+    background-color: #ededed91;
+}
+
+.grid__row:nth-child(4n - 2) {
+    padding: 5px 47px;
+    margin: 0 3px;
+}
+
+.grid__head {
+    font-weight: 400;
+}
