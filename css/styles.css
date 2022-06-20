@@ -91,19 +91,16 @@ body {
 }
 
 .form {
-  margin: 0 auto;
+  margin: 5px auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
 .date {
-  padding: 10px 0;
-  margin-left: 5px;
   font-size: 18px;
   letter-spacing: 1px;
   border: none;
-  background-color: transparent;
   font-family: "Inter", sans-serif;
   font-weight: 300;
 }
