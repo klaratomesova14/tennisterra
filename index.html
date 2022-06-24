@@ -25,48 +25,50 @@
 <body>
 
 <div class="layout">
+    <div class="header">
+        <div class="header__content">
+            <div class="logo">
+                <img class="logo image" src="images/tennisterra-logo.svg">
 
-<div class="header">
-    <div class="logo">
-        <a class="logo__link" href="index.html">
-            <img class="logo__icon" src="images/logo-tennisterra.png" alt="logo tennisterra"><h1 class="logo__title logo__title--left">Tennis</h1><h1 class="logo__title logo__title--right">terra</h1>
-        </a>
+
+            </div>
+            <!--
+        <div class="logo">
+            <a class="logo__link" href="index.html">
+                <img class="logo__icon" src="images/logo-tennisterra.png" alt="logo tennisterra"><h1 class="logo__title logo__title--left">Tennis</h1><h1 class="logo__title logo__title--right">terra</h1>
+            </a>
+        </div>
+        -->
+            <ul class="menu">
+                <li class="menu__item menu__item--a"><a class="menu__link" href="news.html">news</a></li>
+                <li class="menu__item menu__item--b"><a class="menu__link" href="scores.html">scores</a></li>
+                <li class="menu__item menu__item--c"><a class="menu__link menu__link--active" href="rankings.html">rankings</a></li>
+                <li class="menu__item menu__item--d"><a class="menu__link" href="tournaments.html">tournaments</a></li>
+                <li class="menu__item menu__item--e"><a class="menu__link" href="players.html">players</a></li>
+            </ul>
     </div>
-
-    <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href="news.html">news</a></li>
-        <li class="menu__item"><a class="menu__link" href="scores.html">scores</a></li>
-        <li class="menu__item"><a class="menu__link menu__link--active" href="rankings.html">rankings</a></li>
-        <li class="menu__item"><a class="menu__link" href="tournaments.html">tournaments</a></li>
-        <li class="menu__item"><a class="menu__link" href="players.html">players</a></li>
-    </ul>
 </div>
 
 <div class="content">
-    <h2 class="content__title">Rankings</h2>
 
-    <form class="form">
-        <select id="date" class="date"> 
-            <option>16-06-2022</option>
-            <option>xxx</option>
-            <option>xxx</option>
-            <option>xxx</option>
-            <option>xxx</option>
-        </select>
-    </form>
+    <div class="content__header">
+        <h2 class="content__title">Rankings</h2>
 
-    <div class="submenu">
-        <button id="atp_singles" class="submenu__item submenu__item--active">ATP Singles</button>
-        <button id="wta_singles" class="submenu__item">WTA Singles</button>
+        <p id="date" class="date">27-06-2022</p>
+        
+        <div class="submenu">
+            <button id="atp_singles" class="submenu__item submenu__item--active">ATP Singles</button>
+            <button id="wta_singles" class="submenu__item">WTA Singles</button>
+        </div>
     </div>
 
     <div class="grid">
 
-        <div class="grid__row">
-            <div class="grid__data grid__head">#</div>
-            <div class="grid__data grid__head">name</div>
-            <div class="grid__data grid__head">country</div>
-            <div class="grid__data grid__head">points</div>
+        <div class="grid__row grid__head">
+            <div class="grid__data">#</div>
+            <div class="grid__data">name</div>
+            <div class="grid__data">country</div>
+            <div class="grid__data">points</div>
         </div>
 
         <div class="grid__row">

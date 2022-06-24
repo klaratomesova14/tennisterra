@@ -2,16 +2,23 @@
 @use "colors";
 
 .header {
-    grid-column: 2 / 3;
+    grid-column: 1 / -1;
     grid-row: 1 / 2;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
+    padding-bottom: 10px;
     margin: 0;
-
+    background-color: white;
+    border-bottom: 2.5px solid #585563;
 }
 
 .logo {
+
+    width: 260px;
+
+    &__image {
+        width: 100%;
+    }
 
     &__link {
         color: black;
@@ -42,4 +49,24 @@
             color: colors.$primary;
         }
     }
+}
+
+
+@media screen and (min-width: 1050px) {
+
+.header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    margin: 0;
+
+    &__content {
+        display: flex;
+        width: 100%;
+        max-width: 1150px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
 }

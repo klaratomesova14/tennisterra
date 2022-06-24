@@ -1,82 +1,73 @@
 @use "colors";
 
 .content {
-    grid-column: 2 / 3;
+    grid-column: 1 / -1;
     grid-row: 3 / 4;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .content__title {
-    text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     letter-spacing: 1px;
     font-weight: 400;
-    margin-bottom: 0px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 40px;
     padding: 0;
 }
 
-.form {
-    margin: 5px auto;
-    width: fit-content;
-}
 
 .date {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     border: none;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
+    margin: 0;
+    margin-right: 40px;
 }
 
 .submenu {
-    margin: 30px auto;
+    margin: 0;
     width: fit-content;
     display: flex;
-    gap: 75px;
+    gap: 45px;
 
     &__item {
     background-color: #CCCCCC;
     color: white;
     border-radius: 20px;
     border: none;
-    padding: 25px 35px;
+    padding: 20px 30px;
     cursor: pointer;
     font-size: 16px;
   
     &:hover  {
-        background-color: #9d9d9d;
+        background-color: #58556397;
     }
 
     &--active {
         background-color: colors.$primary;
+
+        &:hover  {
+            background-color: colors.$primary;
+        }
     }
 }
 }
 
-.grid {
-    margin: 50px auto;
-    padding: 0 25px;
-    display: grid;
-    grid-auto-rows: auto;
-    background-color: white;
-}
+@media screen and (min-width: 1050px) {
 
-.grid__row {
-    display: grid;
-    align-items: end;
-    padding: 5px 50px;
-    border-radius: 5px;
-    grid-template-columns: 50px 1.5fr 1fr auto;
-}
+.content {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
 
-.grid__row:nth-child(even) {
-    background-color: #ededed91;
+    &__header {
+        display: flex;
+        align-items: baseline;
+        margin: 45px 0;
+    }
 }
-
-.grid__row:nth-child(4n - 2) {
-    padding: 5px 47px;
-    margin: 0 3px;
-}
-
-.grid__head {
-    font-weight: 400;
 }

@@ -1,8 +1,23 @@
+
+.layout {
+    width: 100%;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 10% 90% 10%;
+    grid-template-rows: 150px 70px auto;
+   
+}
+
+
+@media screen and (min-width: 1100px) {
+    
+
 .layout {
 
     display: grid;
-    margin: 30px 0;
-    grid-template-columns: 1fr 1200px 1fr;
-    grid-template-rows: auto 70px auto;
+    margin: 0;
+    grid-template-columns: 1fr 1050px 1fr;
+    grid-template-rows: 100px 120px auto;
    
+}
 }
