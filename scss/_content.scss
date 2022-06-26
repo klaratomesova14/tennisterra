@@ -58,6 +58,61 @@
 }
 }
 
+.filter {
+    margin: 20px 0;
+    padding: 25px 30px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    position: relative;
+
+    &::before {
+        content: "FILTER";
+        color: #c7c6c6;
+        font-size: 12px;
+        font-weight: 400;
+        background-color: white;
+        position: absolute;
+        top: -7px;
+    }
+
+}
+
+.form__field {
+    color: #6e6e6e;
+    padding: 7px 10px;
+    border-radius: 15px;
+    margin-right: 25px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &--small {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    &--middle {
+        width: 170px;
+        border: 1.5px solid black;
+    }
+
+    &--big {
+        width: 200px;
+    }
+}
+
+.form__icon {
+    font-size: 13px;
+}
+
+.form__label {
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 2px;
+}
+
 @media screen and (min-width: 1050px) {
 
 .content {

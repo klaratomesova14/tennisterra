@@ -8,13 +8,13 @@
     align-items: flex-end;
     padding-bottom: 10px;
     margin: 0;
-    background-color: white;
-    border-bottom: 2.5px solid #585563;
+    background-color:  #212024c3;
+    box-shadow: 0 2px 3px white;
 }
 
 .logo {
 
-    width: 260px;
+    width: 280px;
 
     &__image {
         width: 100%;
@@ -52,7 +52,7 @@
 }
 
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1100px) {
 
 .header {
     grid-column: 1 / -1;

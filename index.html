@@ -5,14 +5,14 @@
 <meta charset="UTF-8">
 <title>Tennisterra</title>
 
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#d6d86e">
-<link rel="shortcut icon" href="favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#cfc708">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
 <meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="favicon/browserconfig.xml">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
 <link rel="divreconnect" href="httdivs://fonts.googleadivis.com">
@@ -20,25 +20,25 @@
 <link href="httdivs://fonts.googleadivis.com/css2?family=Kdam+Thmor+divro&disdivlay=swadiv" rel="stylesheet">
 <link href="httdivs://fonts.googleadivis.com/css2?family=Inter:wght@100;200;300;400;500&disdivlay=swadiv" rel="stylesheet">
 <link href="httdivs://fonts.googleadivis.com/css2?family=Heebo:wght@100;200;300;400&disdivlay=swadiv" rel="stylesheet">
+<script src="https://kit.fontawesome.com/cce590eaf9.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
 <div class="layout">
-    <div class="header">
+
+    <header class="header">
         <div class="header__content">
             <div class="logo">
-                <img class="logo image" src="images/tennisterra-logo.svg">
-
-
+                <img class="logo image" src="images/tennisterra-logowhite.svg">
             </div>
-            <!--
-        <div class="logo">
-            <a class="logo__link" href="index.html">
-                <img class="logo__icon" src="images/logo-tennisterra.png" alt="logo tennisterra"><h1 class="logo__title logo__title--left">Tennis</h1><h1 class="logo__title logo__title--right">terra</h1>
-            </a>
-        </div>
-        -->
+                <!--
+            <div class="logo">
+                <a class="logo__link" href="index.html">
+                    <img class="logo__icon" src="images/logo-tennisterra.png" alt="logo tennisterra"><h1 class="logo__title logo__title--left">Tennis</h1><h1 class="logo__title logo__title--right">terra</h1>
+                </a>
+            </div>
+            -->
             <ul class="menu">
                 <li class="menu__item menu__item--a"><a class="menu__link" href="news.html">news</a></li>
                 <li class="menu__item menu__item--b"><a class="menu__link" href="scores.html">scores</a></li>
@@ -46,202 +46,426 @@
                 <li class="menu__item menu__item--d"><a class="menu__link" href="tournaments.html">tournaments</a></li>
                 <li class="menu__item menu__item--e"><a class="menu__link" href="players.html">players</a></li>
             </ul>
-    </div>
-</div>
+        </div>
+    </header>
 
-<div class="content">
+    <div class="content">
 
-    <div class="content__header">
-        <h2 class="content__title">Rankings</h2>
+        <div class="content__header">
+            <h2 class="content__title">Rankings</h2>
 
-        <p id="date" class="date">27-06-2022</p>
-        
-        <div class="submenu">
-            <button id="atp_singles" class="submenu__item submenu__item--active">ATP Singles</button>
-            <button id="wta_singles" class="submenu__item">WTA Singles</button>
+            <p id="date" class="date">27-06-2022</p>
+            
+            <div class="submenu">
+                <button id="atp_singles" class="submenu__item submenu__item--active">ATP Singles</button>
+                <button id="wta_singles" class="submenu__item">WTA Singles</button>
+            </div>
+        </div>
+
+        <div class="filter">
+            <form method="get">
+                <i class="form__icon fa-solid fa-magnifying-glass"></i>
+                <input class="form__field form__field--big" type="text"name="search" id="search" placeholder="Search">
+
+
+                <label class="form__label" for "min-age">country</label>
+                <select class="form__field form__field--middle" name="country" id="country">
+                    <option>All countries</option>
+                    <option>xxx</option>
+                    <option>xxx</option>
+                    <option>xxx</option>          
+                </select>
+
+                <label class="form__label" for "min-age">age</label>
+
+                <input class="form__field form__field--small" type="number"name="min-age" id="min-age" placeholder="min">
+
+                <input class="form__field form__field--small" type="number"name="max-age" id="max-age" placeholder="max">
+
+            </form>
+        </div>
+
+        <div class="grid">
+
+            <div class="grid__row grid__head">
+                <div class="grid__data">#</div>
+                <div class="grid__data"></div>
+                <div class="grid__data">name</div>
+                <div class="grid__data">age</div>
+                <div class="grid__data">country</div>
+                <div class="grid__data">points</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data grid__data--small"><i class="fa-solid fa-caret-down"></i> -4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data grid__data--small"><i class="fa-solid fa-caret-up"></i> +4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
+            <div class="grid__row">
+                <div class="grid__data">1</div>
+                <div class="grid__data">+4</div>
+                <div class="grid__data">Daniil Medvedev</div>
+                <div class="grid__data">18</div>
+                <div class="grid__data">Russia</div>
+                <div class="grid__data">7950</div>
+            </div>
+
         </div>
     </div>
 
-    <div class="grid">
-
-        <div class="grid__row grid__head">
-            <div class="grid__data">#</div>
-            <div class="grid__data">name</div>
-            <div class="grid__data">country</div>
-            <div class="grid__data">points</div>
+    <footer class="footer">
+        <div class="logo">
+            <img class="logo image" src="images/tennisterra-logowhite.svg">
         </div>
+    </footer>
 
-        <div class="grid__row">
-            <div class="grid__data">1</div>
-            <div class="grid__data">Daniil Medvedev</div>
-            <div class="grid__data">Russia</div>
-            <div class="grid__data">7950</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">2</div>
-            <div class="grid__data">Alexander Zverev</div>
-            <div class="grid__data">Germany</div>
-            <div class="grid__data">7075</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">3</div>
-            <div class="grid__data">Novak Djokovic</div>
-            <div class="grid__data">Serbia</div>
-            <div class="grid__data">6770</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">4</div>
-            <div class="grid__data">Rafael Nadal</div>
-            <div class="grid__data">Spain</div>
-            <div class="grid__data">6525</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">5</div>  
-            <div class="grid__data">Casper Ruud</div>
-            <div class="grid__data">Norway</div>
-            <div class="grid__data">5050</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">6</div>
-            <div class="grid__data">Stefanos Tsitsipas</div>
-            <div class="grid__data">Greece</div>
-            <div class="grid__data">4945</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">1</div>
-            <div class="grid__data">Daniil Medvedev</div>
-            <div class="grid__data">Russia</div>
-            <div class="grid__data">7950</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">2</div>
-            <div class="grid__data">Alexander Zverev</div>
-            <div class="grid__data">Germany</div>
-            <div class="grid__data">7075</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">3</div>
-            <div class="grid__data">Novak Djokovic</div>
-            <div class="grid__data">Serbia</div>
-            <div class="grid__data">6770</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">4</div>
-            <div class="grid__data">Rafael Nadal</div>
-            <div class="grid__data">Spain</div>
-            <div class="grid__data">6525</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">5</div>  
-            <div class="grid__data">Casper Ruud</div>
-            <div class="grid__data">Norway</div>
-            <div class="grid__data">5050</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">6</div>
-            <div class="grid__data">Stefanos Tsitsipas</div>
-            <div class="grid__data">Greece</div>
-            <div class="grid__data">4945</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">1</div>
-            <div class="grid__data">Daniil Medvedev</div>
-            <div class="grid__data">Russia</div>
-            <div class="grid__data">7950</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">2</div>
-            <div class="grid__data">Alexander Zverev</div>
-            <div class="grid__data">Germany</div>
-            <div class="grid__data">7075</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">3</div>
-            <div class="grid__data">Novak Djokovic</div>
-            <div class="grid__data">Serbia</div>
-            <div class="grid__data">6770</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">4</div>
-            <div class="grid__data">Rafael Nadal</div>
-            <div class="grid__data">Spain</div>
-            <div class="grid__data">6525</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">5</div>  
-            <div class="grid__data">Casper Ruud</div>
-            <div class="grid__data">Norway</div>
-            <div class="grid__data">5050</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">6</div>
-            <div class="grid__data">Stefanos Tsitsipas</div>
-            <div class="grid__data">Greece</div>
-            <div class="grid__data">4945</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">1</div>
-            <div class="grid__data">Daniil Medvedev</div>
-            <div class="grid__data">Russia</div>
-            <div class="grid__data">7950</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">2</div>
-            <div class="grid__data">Alexander Zverev</div>
-            <div class="grid__data">Germany</div>
-            <div class="grid__data">7075</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">3</div>
-            <div class="grid__data">Novak Djokovic</div>
-            <div class="grid__data">Serbia</div>
-            <div class="grid__data">6770</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">4</div>
-            <div class="grid__data">Rafael Nadal</div>
-            <div class="grid__data">Spain</div>
-            <div class="grid__data">6525</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">5</div>  
-            <div class="grid__data">Casper Ruud</div>
-            <div class="grid__data">Norway</div>
-            <div class="grid__data">5050</div>
-        </div>
-
-        <div class="grid__row">
-            <div class="grid__data">6</div>
-            <div class="grid__data">Stefanos Tsitsipas</div>
-            <div class="grid__data">Greece</div>
-            <div class="grid__data">4945</div>
-        </div>
-        
-    </div>
-
-</div>
 </div>
 
 </body>

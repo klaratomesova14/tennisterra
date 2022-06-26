@@ -1,10 +1,16 @@
+@use "colors";
+
 
 .layout {
-    width: 100%;
+    background-image: url(/images/background-photo4.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-color: white;
+    height: 100%;
     display: grid;
     margin: 0;
     grid-template-columns: 10% 90% 10%;
-    grid-template-rows: 150px 70px auto;
+    grid-template-rows: 150px 70px auto 70px 100px;
    
 }
 
@@ -16,8 +22,8 @@
 
     display: grid;
     margin: 0;
-    grid-template-columns: 1fr 1050px 1fr;
-    grid-template-rows: 100px 120px auto;
+    grid-template-columns: 1fr 1100px 1fr;
+    grid-template-rows: 110px 100px auto 100px 100px;
    
 }
 }

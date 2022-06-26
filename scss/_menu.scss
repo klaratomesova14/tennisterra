@@ -68,15 +68,14 @@
     margin: 0;
 
     &__item {
-        margin : 0 15px;
+        margin : 12px 15px 0 15px;
         font-weight: 400;
-        letter-spacing: 1px;
-        line-height: 26px;   
+        letter-spacing: 1px; 
     }
 
     &__link {
         text-decoration: none;
-        color: black;
+        color: white;
         font-size: 18px;
 
         &:hover {
