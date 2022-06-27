@@ -6,6 +6,14 @@
     background-color: white;
     border-radius: 5px;
     padding: 20px;
+
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        align-items: baseline;
+        margin: 15px 0;
+    }
 }
 
 .content__title {
@@ -14,7 +22,7 @@
     font-weight: 400;
     margin: 0;
     margin-left: 10px;
-    margin-right: 40px;
+    margin-right: 20px;
     padding: 0;
 }
 
@@ -26,17 +34,17 @@
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     margin: 0;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .submenu {
     margin: 0;
     width: fit-content;
     display: flex;
-    gap: 45px;
+    gap: 10px;
 
     &__item {
-    background-color: #CCCCCC;
+    background-color: #b6b5b5;
     color: white;
     border-radius: 20px;
     border: none;
@@ -45,7 +53,7 @@
     font-size: 16px;
   
     &:hover  {
-        background-color: #58556397;
+    background-color: #979696;
     }
 
     &--active {
@@ -115,6 +123,25 @@
 
 @media screen and (min-width: 1050px) {
 
+.content__title {
+    margin-right: 40px;
+
+}
+
+
+.date {
+
+    margin-right: 40px;
+}
+
+
+
+.submenu {
+    margin: 0;
+    width: fit-content;
+    display: flex;
+    gap: 45px;
+}
 .content {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
@@ -123,6 +150,7 @@
         display: flex;
         align-items: baseline;
         margin: 45px 0;
+        gap: 0;
     }
 }
 }

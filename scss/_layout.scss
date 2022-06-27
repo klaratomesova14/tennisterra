@@ -2,7 +2,7 @@
 
 
 .layout {
-    background-image: url(/images/background-photo4.png);
+    background-image: url(images/background-photo5.png);
     background-size: 100%;
     background-repeat: repeat-y;
     background-color: white;
@@ -10,7 +10,7 @@
     display: grid;
     margin: 0;
     grid-template-columns: 10% 90% 10%;
-    grid-template-rows: 150px 70px auto 70px 100px;
+    grid-template-rows: 140px 0 auto 70px 100px;
    
 }
 
